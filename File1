@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+
+public class Gato {
+
+        String cor;
+        double posiçao = 0;      
+        
+        void miar() {
+        System.out.println("MIAU");
+        }
+        
+        void andar(double distancia) {
+        posiçao = distancia + posiçao;	
+    	System.out.println("a posiçao do gato é " + posiçao);
+        }
+        
+        public static void main(String []args) {
+        Gato g = new Gato();
+        g.miar();
+        g.andar(32);
+        g.andar(-26);
+        }        
+        
+     }
+
+	
